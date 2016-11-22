@@ -57,6 +57,7 @@ IF NOT "%CHECK_PGC%"=="%PGC%" (
 REM evaluate
 IF %PGC% GTR %1 (
     REM restart LaKeel BI Server
+    ECHO Restart LaKeel BI Server ^(%COMPUTERNAME%^)
     CALL .\restartLaKeelBI %2
     GOTO AFTER
 )
